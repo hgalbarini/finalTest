@@ -14,7 +14,7 @@ jest.unstable_mockModule('fs/promises', () => ({
 // 2. Importamos dinámicamente los módulos para que tomen el mock
 const fs = (await import('fs/promises')).default;
 // IMPORTANTE: Ajusta la ruta a tu CartManager.js real
-const { default: CartManager } = await import('../src/CartManager.js');
+const { default: CartManager } = await import('../../src/CartManager.js');
 
 describe('CartManager Unit Tests', () => {
     let manager;

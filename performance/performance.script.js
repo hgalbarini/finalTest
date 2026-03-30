@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+//correr  k6 run performance/performance.script.js con la app andando
+
 // 1. CONFIGURACIÓN DEL ESCENARIO
 export const options = {
     stages: [

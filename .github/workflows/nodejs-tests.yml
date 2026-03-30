@@ -1,0 +1,56 @@
+name: my tests to train
+
+on:
+    push:
+        branches:
+          - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm install
+
+
+  unit-tests:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm install
+      - name: Run Unit Tests
+        run: npm run test:unit
+        env:
+         NODE_OPTIONS: "--experimental-vm-modules" #"traductor" que permite que Jest y Node.js se entiendan cuando usas import y export en lugar del viejo require
+
+
+  integration-tests:
+    needs: [build, unit-tests]
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:latest
+        ports:
+          - 27017:27017
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm install
+      - name: Run Integration Tests
+        run: npm run test:int
+        env:
+          NODE_OPTIONS: "--experimental-vm-modules"
+          NODE_ENV: test
+          MONGO_URL: mongodb://localhost:27017/test_db
