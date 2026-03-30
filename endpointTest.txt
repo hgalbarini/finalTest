@@ -1,0 +1,208 @@
+http://192.168.0.150:8080/api/products
+output:
+[
+    {
+        "id": 1,
+        "title": "TestTitle",
+        "description": "TestDescription",
+        "code": "TestCode",
+        "price": 1,
+        "stock": 1,
+        "category": "TestCategory",
+        "thumbnail": [
+            "TestThumbnail1",
+            "TestThumbnail2"
+        ]
+    },
+    {
+        "id": 0,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "stock": 0,
+        "category": "",
+        "thumbnail": []
+    },
+    {
+        "id": 0,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "stock": 0,
+        "category": "",
+        "thumbnail": []
+    },
+    {
+        "id": 0,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "stock": 0,
+        "category": "",
+        "thumbnail": []
+    },
+    {
+        "id": 0,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "stock": 0,
+        "category": "",
+        "thumbnail": []
+    },
+    {
+        "id": 2,
+        "title": "TestTitl2",
+        "description": "TestDescription2",
+        "code": "TestCode2",
+        "price": 12,
+        "stock": 12,
+        "category": "TestCategory2",
+        "thumbnail": [
+            "TestThumbnail12",
+            "TestThumbnail22"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "TestTitl2",
+        "description": "TestDescription2",
+        "code": "TestCode2",
+        "price": 12,
+        "stock": 12,
+        "category": "TestCategory2",
+        "thumbnail": [
+            "TestThumbnail12",
+            "TestThumbnail22"
+        ]
+    },
+    {
+        "id": 22332,
+        "title": "TestTitl2",
+        "description": "TestDescription2",
+        "code": "TestCode2",
+        "price": 12,
+        "stock": 12,
+        "category": "TestCategory2",
+        "thumbnail": [
+            "TestThumbnail12",
+            "TestThumbnail22"
+        ]
+    }
+]
+-----
+http://192.168.0.150:8080/api/products/1
+output:
+{
+    "id": 1,
+    "title": "TestTitle",
+    "description": "TestDescription",
+    "code": "TestCode",
+    "price": 1,
+    "stock": 1,
+    "category": "TestCategory",
+    "thumbnail": [
+        "TestThumbnail1",
+        "TestThumbnail2"
+    ]
+}
+-----
+http://192.168.0.150:8080/api/products/12222
+output:
+{
+    "success": false,
+    "error": "Product not found with id: 12222"
+}
+status 404
+-----
+http://192.168.0.150:8080/api/products
+body input:
+{
+  "title": "Nuevo Producto",
+  "description": "Descripción del nuevo producto",
+  "code": "CODE123",
+  "price": 99.99,
+  "stock": 50,
+  "category": "Electrónica",
+  "thumbnail": [
+    "imagen1.jpg",
+    "imagen2.jpg"
+  ]
+}
+output:
+{
+    "status": "Success",
+    "message": "Product added successfully"
+}
+----
+PUT http://192.168.0.150:8080/api/products/1
+{
+  "title": "Producto Actualizado",
+  "price": 149.99,
+  "stock": 30
+}
+output:
+{
+    "status": "Success",
+    "product": {
+        "id": 1,
+        "title": "Producto Actualizado",
+        "description": "TestDescription",
+        "code": "TestCode",
+        "price": 149.99,
+        "stock": 30,
+        "category": "TestCategory",
+        "thumbnail": [
+            "TestThumbnail1",
+            "TestThumbnail2"
+        ]
+    }
+}
+-----
+DELETE http://192.168.0.150:8080/api/products/2
+output:
+{
+    "status": "Success",
+    "message": "Product with id 2 deleted successfully"
+}
+-----
+POST http://192.168.0.150:8080/api/carts
+output:
+{
+    "status": "Success",
+    "cart": {
+        "id": 1,
+        "products": []
+    }
+}
+----
+GET http://192.168.0.150:8080/api/carts/1
+output:
+{
+    "status": "Success",
+    "cart": {
+        "id": 1,
+        "products": []
+    }
+}
+----
+POST http://192.168.0.150:8080/api/carts/1/product/2
+Output:
+{
+    "status": "Success",
+    "cart": {
+        "id": 1,
+        "products": [
+            {
+                "product": "2",
+                "quantity": 1
+            }
+        ]
+    }
+}
+----
+

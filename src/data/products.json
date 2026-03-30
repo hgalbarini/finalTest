@@ -1,0 +1,213 @@
+[
+  {
+    "id": 2,
+    "title": "TestTitl2",
+    "description": "TestDescription2",
+    "code": "TestCode2",
+    "price": 12,
+    "stock": 12,
+    "category": "TestCategory2",
+    "thumbnail": [
+      "TestThumbnail12",
+      "TestThumbnail22"
+    ]
+  },
+  {
+    "id": 22333,
+    "title": "Nuevo Producto",
+    "description": "Descripción del nuevo producto",
+    "code": "CODE123",
+    "price": 99.99,
+    "stock": 50,
+    "category": "Electrónica",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22334,
+    "title": "Nuevo Producto",
+    "description": "Descripción del nuevo producto",
+    "code": "CODE1222223",
+    "price": 99.99,
+    "stock": 50,
+    "category": "Electrónica",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22335,
+    "title": "hugp",
+    "description": "test",
+    "code": "test",
+    "price": "1",
+    "stock": "1",
+    "category": "hola",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22337,
+    "title": "hola",
+    "description": "test",
+    "code": "test2222323e",
+    "price": "22",
+    "stock": "22",
+    "category": "test2222323",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22338,
+    "title": "Mouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS001",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22339,
+    "title": "22Mouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS0013",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22340,
+    "title": "22ssMouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS0013ss",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22341,
+    "title": "2aa2ssMouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS0013ssaa",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22342,
+    "title": "2aa2ssaaMouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS0013ssssaa",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22343,
+    "title": "2aa2ssssaaMouse Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS001ss3ssssaa",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22344,
+    "title": "test Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS001sstest3ssssaa",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22345,
+    "title": "nuevo producto Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "nuevo producto",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22347,
+    "title": "Mousaae Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS0aaa01",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22348,
+    "title": "Mouaaaaaase Inalámbrico",
+    "description": "Mouaaaaaase ergonómico 2.4GHz",
+    "code": "MSzaasda001",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22349,
+    "title": "Mouaaaaaase Inalámbrico",
+    "description": "Mouaaaaaase ergonómico 2.4GHz",
+    "code": "ssssss",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22350,
+    "title": "Mousasdsadsade Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS00asdasdsa1",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22351,
+    "title": "Mousas`1dsadsade Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "MS00asdasd1`sa1",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  },
+  {
+    "id": 22352,
+    "title": "Mousas`1dsadsade Inalámbrico",
+    "description": "Mouse ergonómico 2.4GHz",
+    "code": "nuevo producti",
+    "price": 25.5,
+    "stock": 100,
+    "category": "accesorios",
+    "thumbnails": [],
+    "status": true
+  }
+]

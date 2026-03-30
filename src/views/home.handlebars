@@ -1,0 +1,21 @@
+<div>
+    <h1> Catálogo de Productos estatico 👋</h1>
+    <hr>
+    
+    <div id="productsContainer" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+        {{#each products}}
+            <div class="product-card" style="border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
+                <h3>{{this.title}}</h3>
+                <p><strong>ID:</strong> {{this.id}}</p>
+                <p><strong>Descripción:</strong> {{this.description}}</p>
+                <p><strong>Código:</strong> {{this.code}}</p>
+                <p><strong>Precio:</strong> ${{this.price}}</p>
+                <p><strong>Stock:</strong> {{this.stock}}</p>
+                <p><strong>Categoría:</strong> {{this.category}}</p>
+                <p><strong>Status:</strong> {{#if this.status}}Activo{{else}}Inactivo{{/if}}</p>
+            </div>
+        {{else}}
+            <p>No hay productos disponibles.</p>
+        {{/each}}
+    </div>
+</div>

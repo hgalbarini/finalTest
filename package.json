@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.6",
+    "handlebars": "^4.7.8",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.2.4",
+    "mongoose-paginate-v2": "^1.9.1",
+    "multer": "^2.0.2",
+    "socket.io": "^4.8.3"
+  },
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "testUnit": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Hugo Galbarini",
+  "type": "module",
+  "license": "ISC",
+  "description": "proyectofinal",
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "mongodb-memory-server": "^11.0.1",
+    "supertest": "^7.2.2"
+  }
+}
